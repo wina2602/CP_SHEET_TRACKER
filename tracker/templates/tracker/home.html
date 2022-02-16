@@ -1,0 +1,41 @@
+{% extends 'tracker/base.html'%}
+{%block content%}
+      <div class="container ">
+      <div class="row">
+        <h1 class="ti">{{title}}</h1>
+      </div>
+      <div class="row shadow p-3 mb-5 bg-white rounded">
+        <div class="col" id = 's1'>Username::<a href={{plink}} id ="s1">{{u}}</a></div>
+        <div class="col" id = "s1">SUBMITTED {{sub_cn}}</div>
+        <div class="col" id = "ns1">NOT SUBMITTED {{not_sub_cn}}</div>
+      </div>
+      <div class="row shadow p-3 mb-5 bg-white rounded">
+      <div class="table-responsive">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th scope="col">Link</th>
+              <th scope="col">status</th>
+
+            </tr>
+
+          </thead>
+            <tbody>
+              {%for x,y in links%}
+                  <tr>
+                    <td><a href={{x}} class = "link">{{x}}</a></td>
+                    {% if y == "NOT SUBMITTED" %}
+                      <td id="ns">{{y}}</td>
+                    {% else %}
+                      <td id="s">{{y}}</td>
+                    {% endif %}
+                  </tr>
+              {%endfor%}
+            </tbody>
+        </table>
+      </div>
+      </div>
+
+      </div>
+
+{%endblock%}

@@ -1,0 +1,98 @@
+{% extends 'tracker/base.html' %}
+{% block content %}
+
+    <div id="user_form" class="row shadow p-3 mb-5 bg-white rounded" style ="height:500px">
+      <form  action="tracker/" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="cf_usernmae" style =" color : rgb(5,88,100) ; font-size: xx-large;">CF Username</label>
+            <div class = "p-2"></div>
+            <input type="text"  name = "uname" class="form-control" placeholder="Enter username"></input>
+            <small id="emailHelp" class="form-text text-muted" style =" color : rgb(5,88,100)">Please enter correct username.</small>
+      </div>
+      <div class = "p-2"></div>
+        <label for="cf_usernmae" style =" color : rgb(5,88,100) ; font-size: xx-large;">Select Topic</label>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <button type="submit" value = '0' name = "Implementation"class="btn btn-outline-primary">Implementation</button>
+            </div>
+            <div class="col">
+              <button type="submit"  value = '1' name ="Math " class="btn btn-outline-primary">Math</button>
+            </div>
+            <div class="col">
+              <button type="submit" value = '2' name = "Binary Search"class="btn btn-outline-primary">Binary Search</button>
+            </div>
+          </div>
+          <div class = "p-1"></div>
+          <div class="row">
+            <div class="col">
+              <button type="submit" value = '3' name  = "Prime"class="btn btn-outline-primary">Prime,Sieve</button>
+            </div>
+            <div class="col">
+              <button type="submit" value = '4' name = "Bit" value  = '0'class="btn btn-outline-primary">Bit Manipulation</button>
+            </div>
+            <div class="col">
+              <button type="submit" value = '5' name ="Stack"class="btn btn-outline-primary">Stack,Queue</button>
+            </div>
+          </div>
+          <div class = "p-1"></div>
+          <div class="row">
+            <div class="col">
+              <button type="submit" value = '6' name ="String"class="btn btn-outline-primary">String</button>
+            </div>
+            <div class="col">
+              <button type="submit" value = '7' name ="BFS"class="btn btn-outline-primary">BFS</button>
+            </div>
+            <div class="col">
+              <button type="submit" value = '8' name ="Tree's"class="btn btn-outline-primary">Tree's</button>
+            </div>
+          </div>
+          <div class="p-1"></div>
+          <div class="row">
+            <div class="col">
+              <button type="submit" value = '9' name ="LCA"class="btn btn-outline-primary">LCA</button>
+            </div>
+            <div class="col">
+              <button type="submit" value = '10' name ="Graph"class="btn btn-outline-primary">Graph</button>
+            </div>
+            <div class="col">
+              <button type="submit" value = '11' name ="ME"class="btn btn-outline-primary">Matrix Ex</button>
+            </div>
+          </div>
+          <div class="p-1"></div>
+          <div class="row">
+            <div class="col">
+              <button type="submit" value = '12' name ="Trie"class="btn btn-outline-primary">Trie</button>
+            </div>
+            <div class="col">
+              <button type="submit" value = '13' name ="DP"class="btn btn-outline-primary">DP</button>
+            </div>
+            <div class="col">
+              <button type="submit" value = '14' name ="DISJOINT"class="btn btn-outline-primary">Disjoint</button>
+            </div>
+          </div>
+          <div class="p-1">
+            <div class="row">
+              <div class="col">
+                <button type="submit" value = '15' name ="Mos"class="btn btn-outline-primary">Mo's Algo</button>
+              </div>
+              <div class="col">
+                <button type="submit" value = '16' name ="fenwick"class="btn btn-outline-primary">fenwick Tree</button>
+              </div>
+              <div class="col">
+                <button type="submit" value = '17' name ="Segment"class="btn btn-outline-primary">SegmentTree</button>
+              </div>
+            </div>
+          </div>
+        </div>
+          </form>
+      </div>
+      <div   id = "about_me">
+          <a href="about/">
+            <button type="submit" class="btn btn-secondary btn-lg">About me</button>
+          </a>
+      </div>
+
+
+{%  endblock %}

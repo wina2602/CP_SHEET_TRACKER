@@ -1,0 +1,41 @@
+#about_me{
+  text-align:center;
+  margin-top : 10px;
+}
+#s{
+  color : #0a0;
+  font-weight: 700;
+}
+#user_form{
+  padding-top:5px;
+  margin-top :50px;
+  margin-left:auto;
+  margin-right:auto;
+  width : 600px;
+  height: 500px;
+}
+#ns{
+  color : red;
+  font-weight : 700;
+}
+#s1{
+  color : #0a0;
+  font-weight: 700;
+  font-size :20px;
+  text-align : center;
+}
+#ns1{
+  color : red;
+  font-weight : 700;
+  font-size :20px;
+  text-align : center;
+}
+.ti{
+  text-align : center
+}
+.bg{
+  background-color: #485461;
+  height:100%;
+  width :100%;
+  background-color: rgb(195,213,216);
+}
